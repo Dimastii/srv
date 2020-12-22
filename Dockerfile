@@ -8,10 +8,9 @@ RUN	apt-get install -y wget
 RUN	apt-get install -y nginx
 RUN	apt-get install -y php7.3-fpm php7.3-common php7.3-mysql php7.3-curl
 RUN	apt-get -y install mariadb-server
-RUN	apt-get -y install php-fpm php-mysql
+#RUN	apt-get -y install php-fpm php-mysql
 
 RUN	mkdir /var/www/cveeta && mkdir /etc/nginx/ssl && mkdir /var/www/cveeta/phpmyadmin && mkdir /var/www/cveeta/wordpress
-
 
 RUN	chown -R www-data /var/www/*
 RUN	chmod -R 755 /var/www/*
